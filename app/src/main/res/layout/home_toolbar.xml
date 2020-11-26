@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:background="#EEEEEE">
+
+        <Button
+            android:id="@+id/ic_home_btn_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="18px"
+            android:background="@drawable/ic_hoem_btn_vote" />
+        <Button
+            android:id="@+id/ic_home_btn_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="281px"
+            android:layout_marginTop="19px"
+            android:background="@drawable/ic_home_btn_notification" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_home_badge_notification"
+            android:layout_marginRight="29px"
+            android:layout_marginTop="20.5px"/>
+
+</androidx.appcompat.widget.Toolbar>
