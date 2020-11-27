@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="73dp"
     android:background="#EEEEEE">
 
-        <Button
-            android:id="@+id/ic_home_btn_vote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5px"
-            android:layout_marginTop="18px"
-            android:background="@drawable/ic_hoem_btn_vote" />
-        <Button
-            android:id="@+id/ic_home_btn_notification"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="281px"
-            android:layout_marginTop="19px"
-            android:background="@drawable/ic_home_btn_notification" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_home_badge_notification"
-            android:layout_marginRight="29px"
-            android:layout_marginTop="20.5px"/>
+                <Button
+                    android:id="@+id/ic_home_btn_vote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="281dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/ic_hoem_btn_vote"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/ic_home_badge_notification"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/ic_home_btn_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="294dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/ic_home_btn_notification"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
 </androidx.appcompat.widget.Toolbar>
