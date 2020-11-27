@@ -1,7 +1,9 @@
 package com.sopt.publyclone.ui
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toolbar
 import androidx.viewpager.widget.ViewPager
 import com.sopt.publyclone.R
 import com.sopt.publyclone.adapter.BottomNavigationAdapter
@@ -12,9 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        window.statusBarColor = Color.parseColor("#EEEEEE")
+
         vp_main.adapter = BottomNavigationAdapter(supportFragmentManager)
         vp_main.offscreenPageLimit = 2
-        vp_main.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
+        vp_main.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(
                 position: Int,
                 positionOffset: Float,
@@ -32,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         bnv_main.setOnNavigationItemSelectedListener {
-            when(it.itemId) {
+            when (it.itemId) {
                 R.id.main_home -> vp_main.currentItem = 0
                 R.id.main_curator -> vp_main.currentItem = 1
                 R.id.main_saved -> vp_main.currentItem = 2
